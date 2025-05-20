@@ -51,6 +51,7 @@
       </mat-form-field>
     </div>
     <!-- Filter Button -->
+    <!-- Filter Button -->
 <button
   class="btn btn-outline-secondary"
   (click)="toggleFilterDropdown()"
@@ -74,7 +75,7 @@
       [(ngModel)]="supplierSearch"
     />
     <div
-      *ngFor="let supplier of filteredSuppliers()"
+      *ngFor="let supplier of supplier"
       class="form-check"
     >
       <input
@@ -115,14 +116,6 @@
   </div>
 </div>
 
-    <div class="col-md-6 align">
-      <mat-radio-group [(ngModel)]="supplierView" class="me-3">
-        <mat-radio-button value="registration">Supplier Registration</mat-radio-button>
-        <mat-radio-button value="request">Supplier Request</mat-radio-button>
-      </mat-radio-group>
-      <button mat-stroked-button>Export</button>
-    </div>
-  </div>
 
   <!-- Table -->
   <table mat-table [dataSource]="filteredSuppliers" class="mat-elevation-z8 w-100">

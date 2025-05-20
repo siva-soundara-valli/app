@@ -385,6 +385,9 @@ export class SupplierDashboardComponent {
         s.name.toLowerCase().includes(this.search.toLowerCase())
     );
   }
+// filteredSuppliers(): Supplier[] {
+//   return this.suppliers.filter(s => s.includes(this.supplierSearch));
+// }
 
 //   get filteredSuppliers(): Supplier[] {
 //   return this.suppliers.filter(s => s.includes(this.supplierSearch));
